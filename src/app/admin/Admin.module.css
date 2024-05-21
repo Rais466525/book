@@ -1,0 +1,45 @@
+.adminContainer {
+   padding: 20px;
+}
+
+.adminContainer h1 {
+   margin-bottom: 20px;
+}
+
+.adminContainer ul {
+   list-style: none;
+   padding: 0;
+}
+
+.adminContainer li {
+   margin-bottom: 20px;
+   padding: 10px;
+   border: 1px solid #ccc;
+}
+
+.adminContainer button {
+   margin-right: 10px;
+}
+
+.editForm {
+   margin-top: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+}
+
+.editForm h2 {
+   margin-bottom: 10px;
+}
+
+.editForm input,
+.editForm textarea {
+   display: block;
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 1px solid #ccc;
+}
+
+.editForm button {
+   margin-right: 10px;
+}

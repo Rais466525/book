@@ -1,0 +1,11 @@
+.form {
+   @apply flex border-4 rounded-lg gap-20 mx-28;
+}
+
+.input {
+   @apply bg-transparent flex items-center justify-center bg-slate-800 text-white
+}
+
+.btn {
+   @apply bg-green-600 p-3
+}
