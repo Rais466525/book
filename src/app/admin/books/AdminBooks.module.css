@@ -1,9 +1,5 @@
 .adminBooksContainer {
-   padding: 20px;
-}
-
-.adminBooksContainer h1 {
-   margin-bottom: 20px;
+   @apply p-5
 }
 
 .adminBooksContainer ul {
@@ -12,9 +8,7 @@
 }
 
 .adminBooksContainer li {
-   margin-bottom: 20px;
-   padding: 10px;
-   border: 1px solid #ccc;
+   @apply bg-slate-900/50 text-white mb-5 p-5 border-2 rounded-lg
 }
 
 .adminBooksContainer button {
@@ -25,27 +19,22 @@
    width: 100px;
    height: auto;
    margin-right: 20px;
+   margin-bottom: 20px;
 }
 
 .editForm {
-   margin-top: 20px;
-   padding: 20px;
-   border: 1px solid #ccc;
+   @apply bg-slate-900/50 border-2 rounded-lg p-5
 }
 
 .editForm h2 {
-   margin-bottom: 10px;
+   @apply mb-3 text-white
 }
 
 .editForm input,
 .editForm textarea {
-   display: block;
-   width: 100%;
-   margin-bottom: 10px;
-   padding: 10px;
-   border: 1px solid #ccc;
+   @apply block mb-3 p-3 bg-transparent text-white border w-full
 }
 
 .editForm button {
-   margin-right: 10px;
+   @apply mr-3 bg-blue-600 hover:bg-blue-900 text-white p-2
 }

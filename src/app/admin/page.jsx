@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import Styles from './Admin.module.css';
+import { useEffect, useState } from 'react'
+import Styles from './Admin.module.css'
 
 const AdminPage = () => {
     const [posts, setPosts] = useState([]);
@@ -84,37 +84,36 @@ const AdminPage = () => {
     if (error) return <div>Error: {error}</div>;
 
     return (
-        <div className={Styles.adminContainer}>
+        <main className={Styles.main}>
             <h1>Admin Page</h1>
-            <ul>
+            <ul className={Styles.blockInfo}>
                 {posts.map(post => (
                     <li key={post._id} className={Styles.postItem}>
                         <div>
-                            <strong>Name:</strong> {post.name}
+                            <strong>Имя:</strong> {post.name}
                         </div>
                         <div>
-                            <strong>Email:</strong> {post.email}
+                            <strong>Почта:</strong> {post.email}
                         </div>
                         <div>
-                            <strong>Phone:</strong> {post.phone}
+                            <strong>Номер телефона:</strong> {post.phone}
                         </div>
                         <div>
-                            <strong>Book Title:</strong> {post.bookTitle}
+                            <strong>Название:</strong> {post.bookTitle}
                         </div>
                         <div>
-                            <strong>Page Count:</strong> {post.pageCount}
+                            <strong>Количество страниц:</strong> {post.pageCount}
                         </div>
                         <div>
-                            <strong>Description:</strong> {post.description}
+                            <strong>Описание:</strong> {post.description}
                         </div>
-                        <button onClick={() => handleDelete(post._id)}>Delete</button>
-                        <button onClick={() => handleEditClick(post)}>Edit</button>
+                        <button onClick={() => handleDelete(post._id)}className='p-1 bg-red-700 mt-2 hover:bg-red-900 mr-3 '>Удалить</button>
+                        <button onClick={() => handleEditClick(post)}className='p-1 mt-2 bg-emerald-800 hover:bg-teal-900'>Изменить</button>
                     </li>
                 ))}
             </ul>
             {editingPost && (
                 <form onSubmit={handleEditSubmit} className={Styles.editForm}>
-                    <h2>Edit Post</h2>
                     <input
                         type="text"
                         name="name"
@@ -166,7 +165,7 @@ const AdminPage = () => {
                     <button type="button" onClick={() => setEditingPost(null)}>Cancel</button>
                 </form>
             )}
-        </div>
+        </main>
     );
 };
 

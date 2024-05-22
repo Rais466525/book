@@ -1,0 +1,16 @@
+.bookList {
+   @apply flex flex-wrap gap-5 p-5
+}
+
+.bookItem {
+   @apply bg-slate-900/50 border-2 rounded-lg p-5 max-w-72 flex flex-col items-center text-white
+}
+
+.coverImage {
+   width: 100%;
+   height: auto;
+}
+
+.text {
+   @apply mt-3 -mb-2 -ml-4
+}

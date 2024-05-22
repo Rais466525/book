@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
-import Styles from './AddBook.module.css';
+import { useState } from 'react'
+import Styles from './AddBook.module.css'
 
 const AddBookPage = () => {
     const [formData, setFormData] = useState({
@@ -51,12 +51,11 @@ const AddBookPage = () => {
 
     return (
         <div className={Styles.addBookContainer}>
-            <h1>Add New Book</h1>
             <form onSubmit={handleSubmit} className={Styles.form}>
                 <input
                     type="text"
                     name="title"
-                    placeholder="Title"
+                    placeholder="Название"
                     required
                     className={Styles.input}
                     value={formData.title}
@@ -65,7 +64,7 @@ const AddBookPage = () => {
                 <input
                     type="text"
                     name="author"
-                    placeholder="Author"
+                    placeholder="Автор"
                     required
                     className={Styles.input}
                     value={formData.author}
@@ -73,7 +72,7 @@ const AddBookPage = () => {
                 />
                 <textarea
                     name="description"
-                    placeholder="Description"
+                    placeholder="Описание"
                     required
                     className={Styles.textarea}
                     value={formData.description}
@@ -82,7 +81,7 @@ const AddBookPage = () => {
                 <input
                     type="number"
                     name="price"
-                    placeholder="Price"
+                    placeholder="Цена"
                     required
                     className={Styles.input}
                     value={formData.price}
@@ -91,7 +90,7 @@ const AddBookPage = () => {
                 <input
                     type="text"
                     name="coverImageUrl"
-                    placeholder="Cover Image URL"
+                    placeholder="Ссылка на фото"
                     required
                     className={Styles.input}
                     value={formData.coverImageUrl}

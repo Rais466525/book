@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import Styles from './AdminBooks.module.css';
+import { useEffect, useState } from 'react'
+import Styles from './AdminBooks.module.css'
 
 const AdminBooksPage = () => {
     const [books, setBooks] = useState([]);
@@ -85,19 +85,18 @@ const AdminBooksPage = () => {
 
     return (
         <div className={Styles.adminBooksContainer}>
-            <h1>Admin Books Page</h1>
             <ul>
                 {books.map(book => (
                     <li key={book._id} className={Styles.bookItem}>
                         <img src={book.coverImageUrl} alt={book.title} className={Styles.coverImage} />
                         <div>
                             <h3>{book.title}</h3>
-                            <p><strong>Author:</strong> {book.author}</p>
+                            <p><strong>Автор:</strong> {book.author}</p>
                             <p>{book.description}</p>
-                            <p><strong>Price:</strong> ${book.price}</p>
+                            <p><strong>Цена:</strong> ${book.price}</p>
                         </div>
-                        <button onClick={() => handleDelete(book._id)}>Delete</button>
-                        <button onClick={() => handleEditClick(book)}>Edit</button>
+                        <button onClick={() => handleDelete(book._id)}className='p-1 bg-red-700 mt-2 hover:bg-red-900'>Удалить</button>
+                        <button onClick={() => handleEditClick(book)}className='p-1 mt-2 bg-emerald-800 hover:bg-teal-900'>Изменить</button>
                     </li>
                 ))}
             </ul>
@@ -143,8 +142,8 @@ const AdminBooksPage = () => {
                         placeholder="Cover Image URL"
                         required
                     />
-                    <button type="submit">Update</button>
-                    <button type="button" onClick={() => setEditingBook(null)}>Cancel</button>
+                    <button type="submit">Сохронить</button>
+                    <button type="button" onClick={() => setEditingBook(null)}>Отмена</button>
                 </form>
             )}
         </div>

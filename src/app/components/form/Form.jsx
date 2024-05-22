@@ -46,7 +46,7 @@ const PostForm = () => {
             <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder="Имя"
                 required
                 className={Styles.input}
                 value={formData.name}
@@ -55,7 +55,7 @@ const PostForm = () => {
             <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="Эл. Почта"
                 required
                 className={Styles.input}
                 value={formData.email}
@@ -64,7 +64,7 @@ const PostForm = () => {
             <input
                 type="tel"
                 name="phone"
-                placeholder="Phone"
+                placeholder="Номер телефона"
                 required
                 className={Styles.input}
                 value={formData.phone}
@@ -73,7 +73,7 @@ const PostForm = () => {
             <input
                 type="text"
                 name="bookTitle"
-                placeholder="Book Title"
+                placeholder="Название книги"
                 required
                 className={Styles.input}
                 value={formData.bookTitle}
@@ -82,7 +82,7 @@ const PostForm = () => {
             <input
                 type="number"
                 name="pageCount"
-                placeholder="Page Count"
+                placeholder="Количество страниц"
                 required
                 className={Styles.input}
                 value={formData.pageCount}
@@ -90,7 +90,7 @@ const PostForm = () => {
             />
             <input
                 name="description"
-                placeholder="Description"
+                placeholder="Описание"
                 required
                 className={Styles.input}
                 value={formData.description}

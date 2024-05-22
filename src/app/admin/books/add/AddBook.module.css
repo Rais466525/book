@@ -1,26 +1,17 @@
 .addBookContainer {
-   padding: 20px;
-}
-
-.addBookContainer h1 {
-   margin-bottom: 20px;
+   @apply p-8
 }
 
 .form {
-   display: flex;
-   flex-direction: column;
+   @apply flex flex-col bg-slate-900/50 border-2 p-3 rounded-md
 }
 
 .input {
-   margin-bottom: 10px;
-   padding: 10px;
-   border: 1px solid #ccc;
+   @apply mb-3 p-3 border bg-transparent text-white
 }
 
 .textarea {
-   margin-bottom: 10px;
-   padding: 10px;
-   border: 1px solid #ccc;
+   @apply mb-3 p-3 border bg-transparent text-white;
    resize: vertical;
 }
 

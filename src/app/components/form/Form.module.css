@@ -1,11 +1,11 @@
 .form {
-   @apply flex border-4 rounded-lg gap-20 mx-28;
+   @apply flex flex-col border-4 rounded-lg mx-28 w-96;
 }
 
 .input {
-   @apply bg-transparent flex items-center justify-center bg-slate-800 text-white
+   @apply flex items-center justify-center bg-slate-900/50 text-white p-4 border-b
 }
 
 .btn {
-   @apply bg-green-600 p-3
+   @apply p-3 bg-blue-600/90 text-xl text-white/70 hover:bg-blue-700
 }
