@@ -1,8 +1,6 @@
 .header{
-    padding: 30px;
-    position: fixed;
-    right: 0;
-    z-index: 1;
+    @apply p-8 flex justify-between items-center bg-slate-800/60 py-5 border-b-2 mb-1;
+    z-index: 99;
 
     .button{
         width: 60px;
@@ -13,6 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 99;
     }
 
     .burger{

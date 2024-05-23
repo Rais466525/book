@@ -17,12 +17,14 @@ export default function Header() {
   return (
     <>
     <div className={styles.main}>
+      <header className={styles.header}>
+        
+        <img src="http://books.kg/demo/wp-content/uploads/raritet.png" alt="logo" width={200} />
 
-      <div className={styles.header}>
         <div onClick={() => {setIsActive(!isActive)}} className={styles.button}>
           <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
         </div>
-      </div>
+      </header>
 
     </div>
     <AnimatePresence mode="wait">

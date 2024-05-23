@@ -3,8 +3,8 @@ import "./globals.css";
 import Header from './components/layout/Header'
 
 export const metadata = {
-  title: "Full-stack",
-  description: "Learn mongoose and mongoDB",
+  title: "Раритет",
+  description: "Фирма «Раритет»",
 };
 
 export default function RootLayout({ children }) {
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Bg />
-        <Header />
+        <Header  />
         {children}
       </body>
     </html>
