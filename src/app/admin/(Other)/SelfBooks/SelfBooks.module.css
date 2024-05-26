@@ -1,0 +1,40 @@
+.adminBooksContainer {
+   @apply p-5
+}
+
+.adminBooksContainer ul {
+   list-style: none;
+   padding: 0;
+}
+
+.adminBooksContainer li {
+   @apply bg-slate-900/50 text-white mb-5 p-5 border-2 rounded-lg
+}
+
+.adminBooksContainer button {
+   margin-right: 10px;
+}
+
+.coverImage {
+   width: 100px;
+   height: auto;
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
+
+.editForm {
+   @apply bg-slate-900/50 border-2 rounded-lg p-5
+}
+
+.editForm h2 {
+   @apply mb-3 text-white
+}
+
+.editForm input,
+.editForm textarea {
+   @apply block mb-3 p-3 bg-transparent text-white border w-full
+}
+
+.editForm button {
+   @apply mr-3 bg-blue-600 hover:bg-blue-900 text-white p-2
+}

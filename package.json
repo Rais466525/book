@@ -1,5 +1,5 @@
 {
-  "name": "book-v2",
+  "name": "full-stack",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "framer-motion": "10.6.1",
+    "gsap": "^3.11.5",
+    "mongoose": "^8.2.0",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-modal": "^3.16.1",
+    "sass": "^1.63.6"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "20.12.12",
+    "@types/react": "18.3.2",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.4.5"
   }
 }

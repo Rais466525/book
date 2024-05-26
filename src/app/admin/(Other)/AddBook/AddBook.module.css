@@ -1,0 +1,24 @@
+.addBookContainer {
+   @apply p-8
+}
+
+.form {
+   @apply flex flex-col bg-slate-900/50 border-2 p-3 rounded-md
+}
+
+.input {
+   @apply mb-3 p-3 border bg-transparent text-white
+}
+
+.textarea {
+   @apply mb-3 p-3 border bg-transparent text-white;
+   resize: vertical;
+}
+
+.btn {
+   padding: 10px;
+   background-color: #0070f3;
+   color: white;
+   border: none;
+   cursor: pointer;
+}

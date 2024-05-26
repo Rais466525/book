@@ -1,0 +1,55 @@
+.main {
+   @apply px-5
+}
+
+.blockInfo {
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+   gap: 20px;
+}
+
+.postItem {
+   @apply bg-slate-900/50 border-2 rounded-lg flex flex-col text-white p-4;
+   text-wrap: balance;
+}
+
+.editForm {
+   @apply p-4 flex flex-col gap-3 w-96
+}
+
+.editForm input,
+.editForm textarea {
+   @apply flex items-center justify-center bg-slate-900/50 text-white p-3 border
+}
+
+.editForm button {
+   @apply p-3 border
+}
+
+.editForm button[type="submit"] {
+   @apply bg-green-600 hover:bg-green-800 ease-out duration-200
+}
+
+.editForm button[type="button"] {
+   @apply bg-red-600 hover:bg-red-800 ease-out duration-200
+}
+
+.modal {
+   @apply fixed p-5 bg-slate-900/50 text-white border-2 rounded-lg;
+   z-index: 1000;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(9px);
+   z-index: 999;
+}

@@ -1,0 +1,30 @@
+.bookList {
+   @apply px-5
+}
+
+.bookBlock {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+   gap: 20px;
+}
+
+.bookItem {
+   @apply bg-slate-900/50 border-2 rounded-lg p-5 flex text-white
+}
+
+.coverImage {
+   height: 250px;
+   @apply mr-2
+}
+
+.text {
+   @apply text-white -mt-1;
+   position: relative;
+   text-wrap: balance;
+}
+
+.prise {
+   @apply text-white -mt-1;
+   position: absolute;
+   bottom: 0;
+}

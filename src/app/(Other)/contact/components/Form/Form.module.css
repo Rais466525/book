@@ -1,0 +1,11 @@
+.form {
+   @apply flex flex-col border-4 rounded-lg mx-7 w-96;
+}
+
+.input {
+   @apply flex items-center justify-center bg-slate-900/50 text-white p-4 border-b
+}
+
+.btn {
+   @apply p-3 bg-blue-600/90 text-xl text-white/70 hover:bg-blue-700
+}

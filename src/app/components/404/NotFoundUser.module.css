@@ -1,0 +1,9 @@
+.main {
+   @apply flex justify-center items-center h-svh;
+   background-color: rgba(0, 0, 40, .3);
+}
+
+.text {
+   @apply text-white text-9xl border-4 rounded-lg px-5 py-4 border-slate-300;
+   backdrop-filter: blur(15px);
+}

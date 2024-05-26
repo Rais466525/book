@@ -1,0 +1,23 @@
+.Img {
+   @apply h-60 m-2 sm:h-64 md:h-72
+}
+
+.text {
+   @apply text-white text-sm text-wrap lg:text-xl md:text-base;
+   text-wrap: balance;
+}
+
+.block1 {
+   @apply flex gap-3 bg-slate-900/70 justify-around items-center p-4 flex-wrap sm:flex-nowrap border-2 rounded-t-lg;
+   text-wrap: balance;
+}
+
+.block2 {
+   @apply bg-slate-900/70 p-5 border-2;
+   text-wrap: balance;
+}
+
+.block3 {
+   @apply flex gap-3 bg-slate-900/70 justify-around items-center p-4 flex-wrap-reverse sm:flex-nowrap border-2 rounded-b-lg;
+   text-wrap: balance;
+}
